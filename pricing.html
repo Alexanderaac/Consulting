@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pricing.css" />
+
+    <title>Pricing</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION CONTAINER -->
+      <div class="navigation__main_container">
+        <div class="navigation__container container">
+          <div>
+            <a href="index.html">
+              <img src="images/Alexander Main Logo 800x600.png" alt="" class="img-fluid logo" />
+            </a>
+          </div>
+
+          <nav id="nav">
+            <button class="close__menu__btn" onclick="handleToggleMenu()">
+              <img src="images/close-icon.png" alt="" class="img-fluid" />
+            </button>
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button class="open__menu__btn" onclick="handleToggleMenu()">
+            <img src="images/menu-icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="pricing__section">
+        <div class="container">
+          <div class="heading__container">
+            <h2 class="heading">Find Your Perfect Plan</h2>
+            <p class="sub__heading">
+              Discover the idea plan to fuel your business growth. Our
+              <br />
+              pricing options are carefully crafted to cater to businesses.
+            </p>
+          </div>
+
+          <div class="pricing__container">
+            <div class="pricing__header">
+              <span id="price__monthly">Billed Monthly</span>
+              <button class="toggle__btn" id="toggle"></button>
+              <span id="price__yearly" class="active"
+                >Billed Yearly (save 15%)</span
+              >
+            </div>
+
+            <div class="pricing__body">
+              <div class="pricing__card">
+                <div class="pricing__top">
+                  <h3 class="title">Free</h3>
+                  <h3 class="price">$0</h3>
+                  <p class="desc">
+                    Try our amazing services
+                  </p>
+                </div>
+                <div class="divider"></div>
+                <ul class="feature__lists">
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Amazing feature one</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Wonderful feature two</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Priceless feature three</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Splended feature four</span>
+                  </li>
+                </ul>
+                <button>Try for Free</button>
+              </div>
+              <div class="pricing__card pricing__card_center">
+                <div class="pricing__top">
+                  <h3 class="title">Pro</h3>
+                  <h3 class="price" id="price">$80<span>/yearly</span></h3>
+                  <p class="desc">
+                    Discover your full potentail
+                  </p>
+                </div>
+                <div class="divider"></div>
+                <ul class="feature__lists">
+                  <p>Everything in the Free plan, plus</p>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Amazing feature one</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Wonderful feature two</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Priceless feature three</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Splended feature four</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Delightful feature five</span>
+                  </li>
+                </ul>
+                <button>Subscribe Now</button>
+              </div>
+              <div class="pricing__card">
+                <div class="pricing__top">
+                  <h3 class="title">Enterprise</h3>
+                  <h3 class="price" id="price_2">
+                    Custom <span>yearly billing only</span>
+                  </h3>
+                  <p class="desc">
+                    Unlock your full potentail
+                  </p>
+                </div>
+                <div class="divider"></div>
+                <ul class="feature__lists">
+                  <p>Everything in the Pro plan, plus</p>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Try for free </span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Wonderful feature two</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Priceless feature three</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Splended feature four</span>
+                  </li>
+                  <li>
+                    <img src="images/check-icon.png" alt="" />
+                    <span>Delightful feature five</span>
+                  </li>
+                </ul>
+                <button>Contact Sales</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="footer__top">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+              <h3>Consulting Agency For Your Business</h3>
+              <p>the quick fox jumps over the lazy dog</p>
+            </div>
+            <div
+              class="col-lg-6 text-end d-flex flex-column justify-content-center align-items-end"
+            >
+              <button>Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__center">
+        <div class="container footer_links">
+          <div>
+            <h5>Company Info</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Features</h5>
+            <ul>
+              <li><a href="#">Business Marketing</a></li>
+              <li><a href="#">User Analytic</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Unlimited Support</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="#">IOS & Android</a></li>
+              <li><a href="#">Watch a Demo</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Get In Touch</h5>
+            <ul>
+              <li>
+                <div>
+                  <img src="images/sm-call-icon.png" alt="" />
+                </div>
+                <span>(999) 999-9999</span>
+              </li>
+              <li>
+                <div>
+                  <img src="images/sm-location-icon.png" alt="" />
+                </div>
+                <span>999 address. Address, Address 99999</span>
+              </li>
+              <li>
+                <div>
+                  <img src="images/sm-telegram-icon.png" alt="" />
+                </div>
+                <span>Alexander@consultancy.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <p>Alexander Consultancy. All Right Reserved 2023</p>
+        <div class="social_icons">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/facebook-icon.png" alt="" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/instagram-icon.png" alt="" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/twitter-icon.png" alt="" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/youtube-icon.png" alt="" class="img-fluid" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

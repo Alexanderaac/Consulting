@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Alex Consultation</title>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="header__section">
+
+      <!-- Nav Bar Section -->
+      <div class="navigation__container container">
+        <div>
+          <a href="index.html">
+            <img src="images/Alexander Main Logo 800x600.png" alt="" class="img-fluid logo" />
+          </a>
+        </div>
+
+        <nav id="nav">
+          <button class="close__menu__btn" onclick="handleToggleMenu()">
+            <img src="images/close-icon.png" alt="" class="img-fluid" />
+          </button>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="open__menu__btn" onclick="handleToggleMenu()">
+          <img src="images/menu-icon.png" alt="" />
+        </button>
+      </div>
+
+      <!-- Banner -->
+      <div class="banner__container container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="banner__content">
+              <h1>Alex Consultancy Solution</h1>
+              <p>
+                Not only keeping up with the times, but <br />
+                outphasing them
+              </p>
+              <div class="btn__container">
+                <button class="quote__btn">Get Quote Now</button>
+                <button class="learn__btn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Banner CardsN -->
+      <section class="banner__cards container">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="banner__card">
+              <div>
+                <img src="images/work-icon.png" alt="" class="img-fluid" />
+              </div>
+              <h4 class="card__title">
+                Technological Solutions <br />
+                Consulting
+              </h4>
+              <p class="card__desc">
+                Focused on automating your buisness needs
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="banner__card">
+              <div>
+                <img src="images/store-icon.png" alt="" class="img-fluid" />
+              </div>
+              <h4 class="card__title">
+                Financial <br />
+                consultancy
+              </h4>
+              <p class="card__desc">
+                Just say what's on your mind and we'll get you there
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="banner__card last__banner__card">
+              <div>
+                <img src="images/book-icon.png" alt="" class="img-fluid" />
+              </div>
+              <h4 class="card__title">
+                Trainning <br />
+                Consulting
+              </h4>
+              <p class="card__desc">
+                Strong focus on making your team up to speed
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Section -->
+      <section class="feature__section container">
+        <div class="heading__container">
+          <h2 class="heading">Designing the future of your Buisness</h2>
+          <p class="sub__heading">
+            Increase the productivity of your needs
+            <br />
+            Begin a new chapter by architecting your future
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature__card">
+              <div>
+                <img src="images/feature-icon-1.png" alt="" class="img-fluid" />
+              </div>
+              <h3>972 +</h3>
+              <p>Consumer Products</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature__card">
+              <div>
+                <img src="images/feature-icon-2.png" alt="" class="img-fluid" />
+              </div>
+              <h3>181 +</h3>
+              <p>Financial Services</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature__card">
+              <div>
+                <img src="images/feature-icon-3.png" alt="" class="img-fluid" />
+              </div>
+              <h3>98%</h3>
+              <p>Environmental</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature__card">
+              <div>
+                <img src="images/work-icon.png" alt="" class="img-fluid" />
+              </div>
+              <h3>746 +</h3>
+              <p>Business & Finance</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practice Advice Section -->
+      <section class="practice__advice__section container">
+        <div class="heading__container">
+          <h2 class="heading">Practice Advice</h2>
+          <p class="sub__heading">
+            Problems trying to resolve the conflict between <br />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+
+        <div class="practice__advice__cards">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <div class="practice__advice_card">
+                <div class="card__top">
+                  <h5>
+                    A single source <br />
+                    of truth
+                  </h5>
+                  <p>
+                    “Quantum leap to the future
+                    at your rate
+                  </p>
+                </div>
+
+                <div class="card__bottom">
+                  <img
+                    src="images/practice-advice-1.png"
+                    alt=""
+                    class="img-fluid w-100 h-100"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="practice__advice_card">
+                <div class="card__top">
+                  <h5>
+                    A single source <br />
+                    of truth
+                  </h5>
+                  <p>
+                    “Quantum mechanics” is the description of the behaviour of
+                    matter
+                  </p>
+                </div>
+
+                <div class="card__bottom">
+                  <img
+                    src="images/practice-advice-2.png"
+                    alt=""
+                    class="img-fluid w-100 h-100"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="practice__advice_card">
+                <div class="card__top">
+                  <h5>
+                    A single source <br />
+                    of truth
+                  </h5>
+                  <p>
+                    “Quantum mechanics” is the description of the behaviour of
+                    matter
+                  </p>
+                </div>
+
+                <div class="card__bottom">
+                  <img
+                    src="images/practice-advice-3.png"
+                    alt=""
+                    class="img-fluid w-100 h-100"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="practice__advice_card">
+                <div class="card__top">
+                  <h5>
+                    A single source <br />
+                    of truth
+                  </h5>
+                  <p>
+                    “Quantum mechanics” is the description of the behaviour of
+                    matter
+                  </p>
+                </div>
+
+                <div class="card__bottom">
+                  <img
+                    src="images/practice-advice-4.png"
+                    alt=""
+                    class="img-fluid w-100 h-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who are we section -->
+      <section class="who__we_are__section">
+        <div class="container">
+          <div class="heading__container">
+            <h2 class="heading">Who We Are</h2>
+            <p class="sub__heading">
+              Problems trying to resolve the conflict between the two major
+              realms
+              <br />
+              of Classical physics: Newtonian mechanics
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="video__container">
+                <button class="play__btn">
+                  <iframe width="1000" height="500" src="https://www.youtube.com/embed/Y7cpCDlRfV0" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoXXplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="content">
+                <h3>
+                  Most trusted in <br />
+                  our field
+                </h3>
+                <p>
+                  Most calendars are designed for teams. Slate is designed for
+                  freelancers who want a simple way to plan their schedule.
+                </p>
+
+                <div class="content__cards">
+                  <div class="content__card">
+                    <div>
+                      <img
+                        src="images/who-we-are-icon-1.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div>
+                      <h6>
+                        the quick fox jumps over the lazy <br />
+                        dog
+                      </h6>
+                      <p>Things on a very small scale ...</p>
+                    </div>
+                  </div>
+                  <div class="content__card">
+                    <div>
+                      <img
+                        src="images/who-we-are-icon-2.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div>
+                      <h6>
+                        The one stop solution <br />
+                        to your buisness needs
+                      </h6>
+                      <p>Make change happen at your phase</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners Section -->
+      <section class="partners__section">
+        <div class="container partners__container">
+          <div class="partner__logos">
+            <div>
+              <img src="images/partner-1.png" alt="" class="img-fluid" />
+            </div>
+            <div>
+              <img src="images/partner-2.png" alt="" class="img-fluid" />
+            </div>
+            <div>
+              <img src="images/partner-3.png" alt="" class="img-fluid" />
+            </div>
+            <div>
+              <img src="images/partner-4.png" alt="" class="img-fluid" />
+            </div>
+            <div>
+              <img src="images/partner-5.png" alt="" class="img-fluid" />
+            </div>
+            <div>
+              <img src="images/partner-6.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+
+          <div class="subscribe__card">
+            <h3>
+              Subscribe For Latest <br />
+              Newsletter
+            </h3>
+
+            <div class="email__box">
+              <input type="email" placeholder="Your Email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg__box"></div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact__section">
+        <div class="contact__top container">
+          <div class="heading__container">
+            <h2 class="heading">Get In Touch</h2>
+            <p class="sub__heading">
+              Dynamic problem solving solutions <br />
+              The power of automation it's in your hands
+            </p>
+          </div>
+
+          <div class="contact__cards">
+            <div class="contact__card">
+              <div>
+                <img src="images/call-icon.png" alt="" class="img-fluid" />
+              </div>
+              <div class="center">
+                <p>Alexander@consultancy.com</p>
+                <p>Alexander@consultancy.com</p>
+              </div>
+              <div class="bottom">
+                <p>Get Support</p>
+                <button>Submit Request</button>
+              </div>
+            </div>
+            <div class="contact__card contact__center_card">
+              <div>
+                <img src="images/location-icon.png" alt="" class="img-fluid" />
+              </div>
+              <div class="center">
+                <p>Alexander@consultancy.com</p>
+                <p>Alexander@consultancy.com</p>
+              </div>
+              <div class="bottom">
+                <p>Get Support</p>
+                <button>Submit Request</button>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div>
+                <img src="images/telegram-icon.png" alt="" class="img-fluid" />
+              </div>
+              <div class="center">
+                <p>Alexander@consultancy.com</p>
+                <p>Alexander@consultancy.com</p>
+              </div>
+              <div class="bottom">
+                <p>Get Support</p>
+                <button>Submit Request</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section-->
+    <footer>
+      <div class="footer__top">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+              <h3>Consulting Agency</h3>
+              <p>The one stop solution to your buisness needs</p>
+            </div>
+            <div
+              class="col-lg-6 text-end d-flex flex-column justify-content-center align-items-end"
+            >
+              <button>Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__center">
+        <div class="container footer_links">
+          <div>
+            <h5>Company Info</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Features</h5>
+            <ul>
+              <li><a href="#">Business Marketing</a></li>
+              <li><a href="#">User Analytic</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Unlimited Support</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="#">IOS & Android</a></li>
+              <li><a href="#">Watch a Demo</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Get In Touch</h5>
+            <ul>
+              <li>
+                <div>
+                  <img src="images/sm-call-icon.png" alt="" />
+                </div>
+                <span>(999) 999-9999</span>
+              </li>
+              <li>
+                <div>
+                  <img src="images/sm-location-icon.png" alt="" />
+                </div>
+                <span>999 address. Address, Address 99999</span>
+              </li>
+              <li>
+                <div>
+                  <img src="images/sm-telegram-icon.png" alt="" />
+                </div>
+                <span>Alexander@consultancy.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <p>Alexander Consultancy. All Right Reserved 2023</p>
+        <div class="social_icons">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/facebook-icon.png" alt="" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/instagram-icon.png" alt="" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/twitter-icon.png" alt="" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/youtube-icon.png" alt="" class="img-fluid" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Java Script -->'
+    <script src="js/Script.js"></script>
+  </body>
+</html>
