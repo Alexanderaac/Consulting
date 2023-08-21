@@ -1,0 +1,889 @@
+/* MAIN */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #778899;
+  overflow-x: hidden;
+}
+
+/* STYLES */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading__container {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.heading__container .heading {
+  color: #252b42;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.heading__container .sub__heading {
+  color: white;
+}
+
+/* HEADER STYLES */
+.header__section {
+  height: 100vh;
+  background: url("../images/hero-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.navigation__container .open__menu__btn {
+  display: none;
+}
+
+.navigation__container nav {
+  width: 100%;
+  display: flex;
+  padding-left: 200px;
+}
+
+.navigation__container nav .close__menu__btn {
+  display: none;
+}
+
+.navigation__container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigation__container nav ul a {
+  color: #737373;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.navigation__container nav ul a:hover {
+  color: #ff7b47;
+}
+
+.banner__container {
+  height: calc(100% - 105.86px);
+  padding-top: 80px;
+}
+
+.banner__container .banner__content h1 {
+  color: #252b42;
+  font-size: 90px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.banner__container .banner__content p {
+  color: #737373;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.banner__container .banner__content .btn__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner__container .banner__content .btn__container button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  text-transform: capitalize;
+  padding: 10px 36px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.banner__container .banner__content .btn__container .quote__btn {
+  background-color: #ff7b47;
+  color: white;
+}
+
+.banner__container .banner__content .btn__container .learn__btn {
+  border-color: #0d5c63;
+  color: #0d5c63;
+}
+
+.banner__container .banner__content .btn__container button:hover {
+  background-color: #0d5c63;
+  border-color: #0d5c63;
+  color: white;
+}
+
+/* BANNER CARDS SECTION STYLES */
+
+.banner__cards {
+  margin-top: -121px;
+  padding-bottom: 100px;
+}
+
+.banner__cards .banner__card {
+  height: 242px;
+  background-color: white;
+  padding: 35px 40px;
+}
+
+.banner__cards .banner__card.last__banner__card {
+  background-color: #0d5c63;
+}
+
+.banner__cards .banner__card .card__title {
+  color: #252b42;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.banner__cards .banner__card .card__desc {
+  color: #737373;
+  margin-top: 12px;
+}
+
+.banner__cards .banner__card.last__banner__card .card__title,
+.banner__card.last__banner__card .card__desc {
+  color: white;
+}
+
+/* FEATURES SECTION STYLES */
+.feature__section {
+  height: 626px;
+}
+
+.feature__section .feature__card {
+  background-color: white;
+  height: 209px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature__section .feature__card h3 {
+  color: #252b42;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.feature__section .feature__card p {
+  color: #737373;
+  font-weight: 600;
+}
+
+/* PRACTICE ADVICE STYLES */
+.practice__advice__section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.practice__advice__section .practice__advice_card {
+  background-color: white;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.practice__advice__section .practice__advice_card .card__top {
+  height: 183px;
+  padding: 30px;
+}
+
+.practice__advice__section .practice__advice_card .card__top h5 {
+  color: #252b42;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.practice__advice__section .practice__advice_card .card__top p {
+  color: #737373;
+  margin-top: 12px;
+}
+
+.practice__advice__section .practice__advice_card .card__bottom {
+  height: 138px;
+}
+
+/* WHO WE ARE SECTION STYLES */
+.who__we_are__section {
+  background-color: white;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+.who__we_are__section .video__container {
+  width: 700px;
+  height: 500px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  background: url("https: //www.youtube.com/embed/Y7cpCDlRfV0");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who__we_are__section .video__container .play__btn {
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #0d5c63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who__we_are__section .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.who__we_are__section .content h3 {
+  color: #252b42;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.who__we_are__section .content p {
+  color: #737373;
+}
+
+.who__we_are__section .content .content__card {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.who__we_are__section .content .content__card h6 {
+  color: #252b42;
+  font-weight: 700;
+}
+
+.who__we_are__section .content .content__card p {
+  color: #737373;
+  margin-top: 10px;
+}
+
+/* PARTNERS SECTION STYLES */
+.partners__section {
+  height: 339px;
+  background-color: #fafafa;
+  position: relative;
+  padding: 30px 0;
+}
+
+.partners__section .partners__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.partners__section .partner__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners__section .subscribe__card {
+  height: 124px;
+  background-color: #17213c;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners__section .subscribe__card h3 {
+  color: white;
+  font-weight: 600;
+}
+
+.partners__section .subscribe__card .email__box {
+  width: 450px;
+  height: 58px;
+  background-color: #fafafa;
+  padding: 2px;
+  display: flex;
+}
+
+.partners__section .subscribe__card .email__box input {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  border: 0;
+  outline: 0;
+  padding: 0 20px;
+}
+
+.partners__section .subscribe__card .email__box button {
+  width: 130px;
+  height: 100%;
+  background-color: #ff7b47;
+  border: 0;
+  color: white;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.partners__section .bg__box {
+  width: 100%;
+  height: 77px;
+  background-color: #252b42;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* CONTACT SECTION STYLES */
+.contact__section {
+  background-color: #778899;
+}
+.contact__section .contact__top {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.contact__section .contact__top .contact__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__section .contact__top .contact__card {
+  background-color: white;
+  height: 333px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__section .contact__top .contact__card .center {
+  margin-top: 20px;
+}
+
+.contact__section .contact__top .contact__card .center p {
+  color: #252b42;
+  font-weight: 600;
+}
+
+.contact__section .contact__top .contact__card .bottom {
+  margin-top: 20px;
+}
+
+.contact__section .contact__top .contact__card .bottom p {
+  color: #252b42;
+  font-weight: 700;
+}
+
+.contact__section .contact__top .contact__card .bottom button {
+  color: #ff7b47;
+  background-color: transparent;
+  border: 2px solid #ff7b47;
+  border-radius: 5px;
+  width: 160px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.contact__section .contact__top .contact__card .bottom button:hover {
+  background-color: #ff7b47;
+  color: white;
+}
+
+.contact__section .contact__top .contact__card.contact__center_card {
+  background-color: #252b42;
+  height: 393px;
+}
+
+.contact__section .contact__top .contact__card.contact__center_card .center p,
+.contact__top .contact__card.contact__center_card .bottom p {
+  color: white;
+}
+
+.contact__section
+  .contact__top
+  .contact__card.contact__center_card
+  .bottom
+  button {
+  color: white;
+  border-color: white;
+}
+
+.contact__section
+  .contact__top
+  .contact__card.contact__center_card
+  .bottom
+  button:hover {
+  color: #252b42;
+  background-color: white;
+}
+
+/* FOOTER STYLES */
+
+footer .footer__top {
+  height: 142px;
+  background-color: #fafafa;
+}
+
+footer .footer__top h3 {
+  color: #252b42;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+footer .footer__top p {
+  color: #737373;
+}
+
+footer .footer__top button {
+  color: white;
+  background-color: #ff7b47;
+  border: 0;
+  width: 160px;
+  height: 58px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+footer .footer__top button:hover {
+  background-color: #17213c;
+}
+
+footer .footer__center {
+  height: 272px;
+  background-color: #17213c;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer__center .footer_links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+footer .footer__center .footer_links h5 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+footer .footer__center .footer_links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .footer__center .footer_links ul li {
+  display: flex;
+  gap: 15px;
+}
+
+footer .footer__center .footer_links ul a,
+span {
+  color: white;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+footer .footer__center .footer_links ul a:hover {
+  text-decoration: underline;
+}
+
+footer .footer__bottom {
+  height: 74px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer__bottom p {
+  color: #737373;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+footer .footer__bottom .social_icons ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+@media screen and (max-width: 767px) {
+  .navigation__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .navigation__container .open__menu__btn {
+    background-color: transparent;
+    border: 0;
+    display: block;
+  }
+
+  .navigation__container nav {
+    display: flex;
+    padding-left: 0px;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 0.3s ease;
+    z-index: 10;
+  }
+
+  .navigation__container nav.active {
+    left: 0%;
+  }
+
+  .navigation__container nav .close__menu__btn {
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    display: block;
+  }
+
+  .navigation__container nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* CSS STYLES FOR MOBILE */
+
+  .heading__container .sub__heading br {
+    display: none;
+  }
+
+  /* HEADER STYLES STARTED */
+  .header__section {
+    height: auto;
+  }
+
+  .banner__container {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .banner__container .banner__content h1 {
+    font-size: 40px;
+  }
+
+  .banner__container .banner__content p {
+    font-size: 18px;
+  }
+
+  .banner__container .banner__content p br {
+    display: none;
+  }
+
+  .banner__container .banner__content .btn__container {
+    flex-direction: column;
+  }
+
+  /* BANNER CARDS SECTION STYLES */
+
+  .banner__cards {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  /* FEATURES SECTION STYLES */
+  .feature__section {
+    height: auto;
+  }
+
+  /* WHO WE ARE SECTION STYLES */
+  .who__we_are__section {
+    background-color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .who__we_are__section .video__container {
+    width: 100%;
+  }
+
+  .who__we_are__section .content {
+    padding-top: 50px;
+  }
+
+  .who__we_are__section .content h3 {
+    font-size: 35px;
+  }
+
+  .who__we_are__section .content .content__card {
+    gap: 15px;
+  }
+
+  /* PARTNERS SECTION STYLES */
+  .partners__section {
+    height: auto;
+  }
+
+  .partners__section .partners__container {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .partners__section .partner__logos {
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 40px;
+  }
+
+  .partners__section .subscribe__card {
+    height: auto;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .partners__section .subscribe__card h3 {
+    text-align: center;
+  }
+
+  .partners__section .subscribe__card .email__box {
+    width: 100%;
+  }
+
+  .partners__section .subscribe__card .email__box input {
+    padding: 0 10px;
+  }
+
+  .partners__section .bg__box {
+    display: none;
+  }
+
+  /* CONTACT SECTION STYLES */
+
+  .contact__section .contact__top .contact__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  /* FOOTER STYLES */
+
+  footer .footer__top {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  footer .footer__top button {
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  footer .footer__center {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  footer .footer__center .footer_links {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  footer .footer__bottom {
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 991px) {
+  /* CSS STYLES FOR MOBILE */
+
+  /* BANNER CARDS SECTION STYLES */
+
+  .banner__cards .banner__card {
+    width: 328px;
+    margin: 0 auto;
+  }
+
+  /* FEATURES SECTION STYLES */
+  .feature__section {
+    height: auto;
+  }
+
+  .feature__section .feature__card {
+    width: 328px;
+    margin: 0 auto;
+  }
+
+  /* PRACTICE ADVICE SECTION STYLES */
+
+  .practice__advice__section .practice__advice_card {
+    width: 328px;
+    margin: 0 auto;
+  }
+
+  /* WHO WE ARE SECTION STYLES */
+
+  .who__we_are__section .video__container {
+    width: 100%;
+  }
+
+  .who__we_are__section .content {
+    padding-top: 50px;
+  }
+
+  /* PARTNERS SECTION STYLES */
+  .partners__section {
+    height: auto;
+  }
+
+  .partners__section .partners__container {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .partners__section .partner__logos {
+    gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 40px;
+  }
+
+  .partners__section .subscribe__card {
+    height: auto;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .partners__section .subscribe__card h3 {
+    text-align: center;
+  }
+
+  .partners__section .subscribe__card .email__box {
+    width: 100%;
+  }
+
+  .partners__section .subscribe__card .email__box input {
+    padding: 0 10px;
+  }
+
+  /* CONTACT SECTION STYLES */
+  .contact__section .contact__top .contact__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .contact__section .contact__top .contact__card {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  /* FOOTER STYLES */
+
+  footer .footer__top {
+    text-align: center;
+    height: auto;
+    padding: 60px 0;
+  }
+
+  footer .footer__top button {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  footer .footer__center {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  footer .footer__center .footer_links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  footer .footer__bottom {
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+}

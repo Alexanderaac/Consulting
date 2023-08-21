@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+/* COMMON STYLES */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION STYLES STARTED */
+.navigation__main_container {
+  background-color: #17213c;
+}
+
+.navigation__container nav {
+  justify-content: end;
+}
+
+.navigation__container nav ul a {
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* PRICING SECTION STYLE */
+.pricing__section {
+  padding-top: 100px;
+  background-color: #f3f3f3;
+}
+
+.pricing__container .pricing__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pricing__container .pricing__header span {
+  color: #252b42;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.pricing__container .pricing__header span.active {
+  color: #ff7b47;
+}
+
+.pricing__container .pricing__header .toggle__btn {
+  width: 80px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  position: relative;
+  background-color: #ff7b47;
+  transition: background-color 0.3s ease;
+}
+
+.pricing__container .pricing__header .toggle__btn.active {
+  background-color: #17213c;
+}
+
+.pricing__container .pricing__header .toggle__btn::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 999px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translate(0, -50%);
+  transition: 0.3s ease;
+}
+
+.pricing__container .pricing__header .toggle__btn.active::after {
+  left: 3px;
+}
+
+.pricing__container .pricing__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 60px 0 100px 0;
+  gap: 30px;
+}
+
+.pricing__container .pricing__body .pricing__card {
+  height: fit-content;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: 4px 0px 8px -2px #10182825;
+}
+
+.pricing__container .pricing__body .pricing__card.pricing__card_center {
+  box-shadow: 5px 0px 20px -2px #ff7b474b;
+}
+
+.pricing__container .pricing__body .pricing__card .pricing__top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pricing__container .pricing__body .pricing__card .pricing__top .title,
+.price {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.pricing__container .pricing__body .pricing__card .pricing__top .price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pricing__container .pricing__body .pricing__card .pricing__top .price span {
+  color: #252b42;
+  font-weight: 600;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.pricing__container .pricing__body .pricing__card .pricing__top .desc {
+  font-size: 18px;
+  color: #737373;
+}
+
+.pricing__container .pricing__body .pricing__card .divider {
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.pricing__container .pricing__body .pricing__card .feature__lists {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.pricing__container .pricing__body .pricing__card .feature__lists p {
+  color: #737373;
+  font-size: 18px;
+}
+
+.pricing__container .pricing__body .pricing__card .feature__lists li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pricing__container .pricing__body .pricing__card .feature__lists li span {
+  color: #252b42;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.pricing__container .pricing__body .pricing__card button {
+  color: #ff7b47;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid #ff7b47;
+  border-radius: 4px;
+  height: 57px;
+  transition: background 0.3s ease;
+}
+
+.pricing__container .pricing__body .pricing__card.pricing__card_center button {
+  background-color: #ff7b47;
+  color: white;
+}
+
+.pricing__container .pricing__body .pricing__card button:hover {
+  color: white;
+  background-color: #ff7b47;
+}
+
+.pricing__container
+  .pricing__body
+  .pricing__card.pricing__card_center
+  button:hover {
+  background-color: transparent;
+  color: #ff7b47;
+}
+
+@media screen and (max-width: 576px) {
+  .navigation__container nav ul a {
+    color: #252b42;
+  }
+
+  .pricing__container .pricing__header {
+    flex-direction: column;
+  }
+
+  .pricing__container .pricing__body {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 60px 0px 100px 0px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .pricing__container .pricing__body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 901px) {
+  .pricing__container .pricing__body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing__container .pricing__body .pricing__card {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
